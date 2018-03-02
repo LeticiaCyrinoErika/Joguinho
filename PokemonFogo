@@ -1,0 +1,33 @@
+
+public class PokemonFogo extends Pokemon {
+	private int totHp;
+	private String tipo;
+	private boolean ehEvolucao;
+	private int hp;
+private String toaltHp;
+	
+	public PokemonFogo (String tipo, int hp, boolean evolucao){
+	}
+
+	
+	public int calcularDano(String tipoAdversario) {
+		if(tipoAdversario == "grama"){
+			totHp= (int) ( 12*0.5);
+		}
+				return totHp;
+	}
+
+
+	
+	public String getTipo() {
+		return tipo;
+	}
+	public int calcularDanoExtra(){
+		if (ehEvolucao==true){
+			toaltHp =(int) (0.03);
+			return hp* toaltHp ;
+		}
+		
+	
+}
+}
