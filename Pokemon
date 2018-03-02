@@ -1,0 +1,27 @@
+public abstract class Pokemon implements IEvolucao {
+	protected String nome;
+	private int hp;
+	private int totHp;
+	
+	public String getNome(){
+		return nome;
+	}
+	public int getHp(){
+		return totalHp;
+	}
+	public void receberAtaque (int dano){
+		hp= hp-totHp;
+	}
+	public String getDados(){
+		return getNome()+"-"+getHp()+"-"+getTipo();
+	  
+	}
+	public abstract int calcularDano (String tipoAdversario);
+	
+	public abstract String getTipo();
+	
+	
+	public String setNome (String nome){
+		return this.nome=nome;
+	}
+}
