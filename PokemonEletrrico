@@ -1,0 +1,39 @@
+
+public class PokemonEletrico extends Pokemon {
+
+	private int toaltHp;
+	private String tipo;
+	private boolean ehEvolucao;
+	private int hp;
+private String totHp ;
+
+	
+	public PokemonEletrico (String tipo, int hp, boolean evolucao){
+	}
+
+	
+	public int calcularDano(String tipoAdversario) {
+		
+		if(tipoAdversario == "voador"){
+			totHp= (int) ( 12*0.5);
+		}
+		if (tipoAdversario == "agua"){
+			totHp= (int) (10*0.2);
+		}
+		return totHp;
+	}
+
+
+	
+	public String getTipo() {
+		return tipo;
+	}
+	public int calcularDanoExtra(){
+		if (ehEvolucao==true){
+			totalHp=(int) (0.03);
+			return hp*totalHp;
+		}
+		
+	
+}
+}
